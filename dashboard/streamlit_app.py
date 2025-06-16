@@ -10,7 +10,7 @@ st.set_page_config(
     page_icon=":bar_chart:",
     layout="wide",
 )
-st.logo("assets/laskar_ai_logo.png")
+st.logo("dashboard/assets/laskar_ai_logo.png")
 
 df = pd.read_csv("all_data.csv")
 df['date'] = pd.to_datetime(df['date'])
