@@ -10,9 +10,9 @@ st.set_page_config(
     page_icon=":bar_chart:",
     layout="wide",
 )
-st.logo("dashboard/assets/laskar_ai_logo.png")
+st.logo("dashboard/assets/laskar_ai_logo.png") # dashboard/ dipakai hanya untuk supaya bisa deploy streamlit
 
-df = pd.read_csv("all_data.csv")
+df = pd.read_csv("dashboard/all_data.csv")
 df['date'] = pd.to_datetime(df['date'])
 df = df.sort_values('date')
 
